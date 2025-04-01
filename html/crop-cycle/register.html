@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar ciclo</title>
+
+    <!-- Links de css y js -->
+    <link rel="stylesheet" href="../../css/supplies/update-register.css">
+    <link rel="stylesheet" href="../../styles-general.css">
+    <script src="../../components/js/header.js"></script>
+    <script src="../../components/js/user-section.js"></script>
+
+    <!-- Tipografia Work Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Integración del header.html y user.section.html -->
+    <div class="hero"></div>
+    <div class="user"></div>
+
+    <!-- Main -->
+    <main class="main">
+        <div class="form-container">
+            <h2 class="form-container__title">Registrar ciclo de cultivo</h2>
+            <div class="form">
+                <div class="form__fields-primary">
+                    <div class="form__field-group">
+                        <p class="form__label">ID del ciclo de cultivo</p>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__field-group">
+                        <p class="form__label">Ubicación</p>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__field-group">
+                        <p class="form__label">Nombre del ciclo de cultivo</p>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__field-group">
+                        <p class="form__label">Estado:</p>
+                        <select class="form__input" name="estado">
+                            <option value="Habilitado">Habilitado</option>
+                            <option value="Deshabilitado">Deshabilitado</option>
+                        </select>
+                    </div>
+                    <div class="form__field-group">
+                        <p class="form__label">Novedades</p>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__field-group">
+                        <p class="form__label">Periodo / fecha inicio</p>
+                        <input type="date" class="form__input">
+                    </div>
+                    <div class="form__field-group">
+                        <p class="form__label">Periodo / fecha fin</p>
+                        <input type="date" class="form__input">
+                    </div>
+                </div><!-- form__fields-primary -->
+                <div class="form__fields-secundary">
+                    <div class="form__field-group form__field-group--large">
+                        <p class="form__label form__label--large">Descripción</p>
+                        <input type="text" class="form__input form__input--large">
+                    </div>
+                    <a href="confirm-update-register-enable-disable.html" ><button class="form__end--button">REGISTRAR</button></a>
+                </div><!-- form__end -->
+            </div><!-- form -->
+        </div> <!-- main__container -->
+    </main>
+
+    <div class="button-end">
+        <a href="table.html"><button class="button-end__return" type="button">CANCELAR</button></a>
+    </div>
+</body>
+</html>

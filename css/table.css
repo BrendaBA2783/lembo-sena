@@ -1,0 +1,176 @@
+/* header */
+header {
+    border-bottom: 0.4rem solid var(--primary_green_900);
+}
+
+/* title table */
+.table-title{
+    display: flex;
+    justify-content: center;
+}
+
+/* Search */
+.search {
+    display: flex;
+    position: relative;
+    justify-content: end;
+    margin-right: 3rem;
+}
+.search__image {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+}
+.search__input {
+    width: 36rem;
+    height: auto;
+    padding: 1rem;
+}
+
+/* Opciones de la tabla */
+.table-options {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: end;
+    margin-top: 2rem;
+    margin-right: 3rem;
+}
+.table-options__image {
+    width: 1rem;
+    height: 1rem;
+}
+.table-options__image--filter {
+    width: 3rem;
+    height: 4rem;
+}
+
+/* Main */
+.main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+/* Tamaño de los campos */
+.table__header,
+.table__cell {
+    width: 24rem;
+    height: 6rem;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+/* Sombra en los th (superior interna) */
+.table__header {
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Sombra en los td (izquierda y derecha interna) */
+.table__cell--left {
+    box-shadow: inset 4px 0px 6px rgba(0, 0, 0, 0.1);
+}
+.table__cell--right {
+    box-shadow: inset -4px 0px 6px rgba(0, 0, 0, 0.1);
+}
+/* Sombra en la última fila (inferior interna) */
+.table__row:last-child .table__cell {
+    box-shadow: inset 0px -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .table__header,
+    .table__cell {
+        width: 100%;
+        height: auto;
+    }
+    .button-end {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (max-width: 400px) {
+    .table-options {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        column-gap: 2rem;
+        margin-right: 0;
+    }
+}
+@media (max-width: 1920px) {
+    .button-end {
+        margin-right: 2rem;
+        gap: 1.6rem;
+    }
+}
+
+/* Media query para vista en móviles (max 610px) */
+@media (max-width: 610px) {
+    /* search */
+    .search {
+        margin-right: 0;
+        justify-content: center;
+    }
+    .search__image {
+        margin-left: 30rem;
+    }
+
+    /* options table */
+    .table-options {
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    /* table */
+    .table {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .table__row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .table__header {
+        background-color: var(--primary_green_900);
+        color: var(--white);
+        font-weight: bold;
+        padding: 0.5rem;
+    }
+    
+    .table__cell {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .table__cell:last-child {
+        border-bottom: none;
+    }
+    
+    .table__cell::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 1rem;
+    }
+    
+    .table__row:nth-child(n+6) {
+        display: none;
+    }
+    
+    .table-container::after {
+        content: "Ver más...";
+        display: block;
+        text-align: center;
+        margin-top: 1rem;
+        font-weight: bold;
+        color: var(--primary_green_900);
+    }
+}

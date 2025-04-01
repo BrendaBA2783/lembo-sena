@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensores</title>
+
+    <!-- Links de css y js -->
+    <link rel="stylesheet" href="../../css/table.css">
+    <link rel="stylesheet" href="../../styles-general.css">
+    <script src="../../components/js/header.js"></script>
+    <script src="../../components/js/user-section.js"></script>
+
+    <!-- Tipografia Work Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Integrando el header.html y section-user.html -->
+    <div class="hero"></div>
+    <div class="user"></div>
+
+    <!-- Título de la tabla -->
+    <div class="table-title">
+        <h2>Sensores</h2>
+    </div>
+    
+    <!-- Sección de búsqueda -->
+    <div class="search">
+        <input class="search__input" type="text" placeholder="Buscar..."/>
+        <img class="search__image" src="../../img/icono_lupa.png" />
+    </div>
+
+    <!-- Opciones de la tabla -->
+    <div class="table-options">
+        <a class="table-options__link" href="id-enable-disable.html">
+            <h4>Deshabilitar/Habilitar<img class="table-options__image" src="../../img/icono_flecha.png" /></h4>
+        </a>
+        <a class="table-options__link" href="reporte.html">
+            <h4>Descargar<img class="table-options__image" src="../../img/icono_flecha.png" /></h4>
+        </a>
+        <a class="table-options__link" href="id-visualise.html">
+            <h4>Visualizar<img class="table-options__image" src="../../img/icono_flecha.png" /></h4>
+        </a>
+        <a class="table-options__link" href="filtro.html">
+            <img class="table-options__image--filter" src="../../img/icono_filtro.png" />
+        </a>
+    </div>
+
+    <!-- Tabla -->
+    <main class="main">
+        <div class="table-container">
+            <table class="table">
+                <tr class="table__row">
+                    <th class="table__header">ID SENSOR</th>
+                    <th class="table__header">TIPO SENSOR</th>
+                    <th class="table__header">NOMBRE</th>
+                    <th class="table__header">TIEMPO ESCANEO</th>
+                    <th class="table__header">DESCRIPCIÓN</th>
+                    <th class="table__header">IMÁGEN</th>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__cell table__cell--left">01</td>
+                    <td class="table__cell">Temperatura</td>
+                    <td class="table__cell">Sensor T1</td>
+                    <td class="table__cell">5 segundos</td>
+                    <td class="table__cell">Mide la temperatura ambiental</td>
+                    <td class="table__cell table__cell--right">sensor_t1.jpg</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__cell table__cell--left">02</td>
+                    <td class="table__cell">Humedad</td>
+                    <td class="table__cell">Sensor H1</td>
+                    <td class="table__cell">10 segundos</td>
+                    <td class="table__cell">Detecta la humedad relativa del aire</td>
+                    <td class="table__cell table__cell--right">sensor_h1.jpg</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__cell table__cell--left">03</td>
+                    <td class="table__cell">Presión</td>
+                    <td class="table__cell">Sensor P1</td>
+                    <td class="table__cell">15 segundos</td>
+                    <td class="table__cell">Registra la presión atmosférica</td>
+                    <td class="table__cell table__cell--right">sensor_p1.jpg</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__cell table__cell--left">04</td>
+                    <td class="table__cell">Movimiento</td>
+                    <td class="table__cell">Sensor M1</td>
+                    <td class="table__cell">5 segundos</td>
+                    <td class="table__cell">Detecta movimientos en un área</td>
+                    <td class="table__cell table__cell--right">sensor_m1.jpg</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__cell table__cell--left">05</td>
+                    <td class="table__cell">Luz</td>
+                    <td class="table__cell">Sensor L1</td>
+                    <td class="table__cell">8 segundos</td>
+                    <td class="table__cell">Mide la intensidad lumínica</td>
+                    <td class="table__cell table__cell--right">sensor_l1.jpg</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <!-- Seccion de botones finales - registrar/actualizar-->
+    <div class="button-end">
+        <a href="register.html"><button class="return" type="submit">REGISTRAR</button></a>
+        <a href="id-update.html"><button class="return" type="submit">ACTUALIZAR</button></a>
+    </div>
+</body>
+</html>

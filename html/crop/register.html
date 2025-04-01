@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar cultivo</title>
+
+    <!-- Links de css y js -->
+    <link rel="stylesheet" href="../../css/crop/update-register.css">
+    <link rel="stylesheet" href="../../styles-general.css">
+    <script src="../../components/js/header.js"></script>
+    <script src="../../components/js/user-section.js"></script>
+
+    <!-- Tipografia Work Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../../components/js/navbar.js" defer></script>
+</head>
+<body>
+    <!-- Integrando el header.html y user-section.html -->
+    <div class="hero"></div>
+    <div class="user"></div>
+
+    <!-- Main -->
+    <main class="main">
+        <div class="form-container">
+            <h2 class="form-container__title">Registrar cultivo</h2>
+            <div class="form">
+                <div class="form__fields-primary">
+                    <div class="form__field-group">
+                        <p class="form__label">ID del cultivo</p>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__field-group">
+                        <p class="form__label">Tipo</p>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__field-group">
+                        <p class="form__label">Ubicación</p>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__field-group">
+                        <p class="form__label">Tamaño</p>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__field-group">
+                        <p class="form__label">Nombre</p>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__field-group">
+                        <p class="form__label">Estado:</p>
+                        <select class="form__input" name="estado">
+                            <option value="Habilitado">Habilitado</option>
+                            <option value="Deshabilitado">Deshabilitado</option>
+                        </select>
+                    </div>
+                    <div class="form__field-group form__field-group--description">
+                        <p class="form__label">Descripción</p>
+                        <input type="text" class="form__input form__input--description">
+                    </div>
+                </div>
+                <div class="form__fields-secondary">
+                    <div class="form__field-group form__field-group--large">
+                        <p class="form__label">Imágen del cultivo</p>
+                        <input type="text" class="form__input form__input--image">
+                    </div>
+                    <a class="form__submit-link" href="confirm-update-register-enable-disable.html">
+                        <button class="form__button">REGISTRAR</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sección de botón final, regresar -->
+    <div class="button-end">
+        <a href="table.html"><button class="button-end__return" type="button">CANCELAR</button></a>
+    </div>
+</body>
+</html>

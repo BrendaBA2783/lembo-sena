@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar usuario</title>
+
+    <!-- Links de css y js -->
+    <link rel="stylesheet" href="../../css/user/update-register.css">
+    <link rel="stylesheet" href="../../styles-general.css">
+    <script src="../../components/js/header.js"></script>
+    <script src="../../components/js/user-section.js"></script>
+
+    <!-- Tipografia Work Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Integración del header.html y el user-section.html-->
+    <div class="hero"></div>
+    <div class="user"></div>
+
+    <!-- Main -->
+    <main class="main">
+        <div class="main__container">
+            <h2 class="main__title">Actualizar usuario del LEMBO SGAL</h2>
+            <div class="form">
+                <div class="form__fields">
+                    <div class="form__group">
+                        <p class="form__label">Tipo de usuario</p>
+                        <input class="form__field" type="text"/>
+                    </div>
+                    <div class="form__group">
+                        <p class="form__label">Tipo de documento</p>
+                        <input class="form__field" type="text"/>
+                    </div>
+                    <div class="form__group">
+                        <p class="form__label">Nombre</p>
+                        <input class="form__field" type="text"/>
+                    </div>
+                    <div class="form__group">
+                        <p class="form__label">Número de identificación</p>
+                        <input class="form__field" type="text"/>
+                    </div>
+                    <div class="form__group">
+                        <p class="form__label">Número telefónico</p>
+                        <input class="form__field" type="text"/>
+                    </div>
+                    <div class="form__group">
+                        <p class="form__label">Correo electrónico</p>
+                        <input class="form__field" type="text"/>
+                    </div>
+                    <div class="form__group">
+                        <p class="form__label">Estado</p>
+                        <input class="form__field" type="text"/>
+                    </div>
+                    <div class="form__group">
+                        <p class="form__label">Confirmación de correo electrónico</p>
+                        <input class="form__field" type="text"/>
+                    </div>
+                </div> <!-- form__fields -->
+                <div class="form__button">
+                    <a href="confirm-update-register-enable-disable.html"><button class="form__button--button">ACTUALIZAR</button></a>
+                </div> <!-- form__button -->
+            </div><!-- form -->
+        </div> <!-- main__container -->
+    </main>
+
+    <!-- Sección de botón final, regresar -->
+    <div class="button-end">
+        <a href="table.html"><button class="button-end__return" type="submit">CANCELAR</button></a>
+    </div>
+</body>
+</html>
